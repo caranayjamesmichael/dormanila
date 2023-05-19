@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: osw;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+nav .logo-container {
+    width: 20%;
+}
+
+nav .logo-container img {
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+
+nav .navigation-container {
+    width: 60%;
+}
+
+nav .navigation-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    list-style: none;
+}
+
+nav .navigation-container ul a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .navigation-container ul a:hover {
+    padding: 10px;
+    transform: scale(1.2);
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+nav .profile-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    gap: 20px;
+}
+
+nav .profile-container img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+main #header {
+    background: linear-gradient(90deg, #FF004C, #171717, #FF004C, #171717);
+    background-size: 500% 500%;
+    animation: animate 12s ease-in-out infinite;
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #header h1 {
+    color: white;
+    font-size: 80px;
+    animation: drop 1s;
+}
+
+main #header p {
+    color: white;
+}
+
+main #header a {
+    padding: 15px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+
+main #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-color: #171717;
+}
+
+main #about .about-info h2 {
+    color: white;
+}
