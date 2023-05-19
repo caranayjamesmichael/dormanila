@@ -89,7 +89,7 @@ main #header {
 
 main #header h1 {
     color: white;
-    font-size: 80px;
+    font-size: 5vw;
     animation: drop 1s;
 }
 
@@ -99,21 +99,133 @@ main #header p {
 
 main #header a {
     padding: 15px;
-    background-color: white;
+    background-color: #171717;
     text-decoration: none;
-    color: black;
+    color: white;
     border-radius: 10px;
 }
+
+main #header a:hover {
+    color: #FF004C;
+    transition: 0.3s;
+}
+
+main .content {
+    height: 100vh;
+}
+
+main #reviews {
+    background-color: #171717;
+    display: flex;
+}
+
+main #reviews > div {
+    width: 50%;
+}
+
+main #reviews .reviews-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    align-items: center;
+}
+
+main #reviews .reviews-container .review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+main #reviews .reviews-container .review:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+main #reviews .reviews-container .review img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px black;
+    object-fit: cover;
+}
+
+main #reviews .reviews-container .name {
+    position: absolute;
+    left: 35px;
+    bottom: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+main #reviews .reviews-container .rating {
+    position: absolute;
+    left: 34px;
+    bottom: 6px;
+}
+
+main #reviews .reviews-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+main #reviews .reviews-heading h2 {
+    color: white;
+    text-transform: uppercase;
+}
+
+main #reviews .reviews-heading .more-reviews {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    box-shadow: 0px 0px 10px black;
+    padding: 5px 4px;
+    border-radius: 50px;
+    position: relative;
+}
+
+main #reviews .reviews-heading .more-reviews img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 80%;
+}
+
+main #reviews .reviews-heading .more-reviews #img-2 {
+    left: 15px;
+    z-index: 1;
+}
+
+main #reviews .reviews-heading .more-reviews #img-3 {
+    left: 27px;
+    z-index: 2;
+}
+
+main #reviews .reviews-heading .more-reviews #img-4 {
+    left: 37px;
+    z-index: 3;
+}
+
+
+
+
+main #reviews .revo
 
 main #about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
     align-items: center;
     text-align: center;
     background-color: #171717;
 }
 
-main #about .about-info h2 {
+main #about .about-container h2 {
     color: white;
 }
