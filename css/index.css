@@ -135,6 +135,10 @@ main #reviews .reviews-container .review {
     justify-content: center;
     align-items: center;
     position: relative; 
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    background-color: blue;
 }
 
 main #reviews .reviews-container .review:hover {
@@ -153,16 +157,16 @@ main #reviews .reviews-container .review img {
 
 main #reviews .reviews-container .name {
     position: absolute;
-    left: 35px;
-    bottom: 30px;
+    left: 0;
+    bottom: 0;
     color: white;
     text-transform: uppercase;
 }
 
 main #reviews .reviews-container .rating {
     position: absolute;
-    left: 34px;
-    bottom: 6px;
+    left: 0;
+    bottom: 0;
 }
 
 main #reviews .reviews-heading {
@@ -171,6 +175,7 @@ main #reviews .reviews-heading {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    background-color: red;
 }
 
 main #reviews .reviews-heading h2 {
