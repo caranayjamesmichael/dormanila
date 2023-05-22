@@ -14,223 +14,240 @@ html, body {
 }
 
 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     height: 80px;
 }
 
-nav .logo-container {
+nav div:nth-child(odd) {
     width: 20%;
-}
-
-nav .logo-container img {
-    display: block;
-    margin: auto;
-    width: 200px;
 }
 
 nav .navigation-container {
     width: 60%;
 }
 
-nav .navigation-container ul {
+nav .logo-container #logo {
+    display: block;
+    margin: auto;
+    max-width: 50%
+}
+
+nav .navigation-container #navigation {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
+    justify-content: space-evenly;
     list-style: none;
 }
 
-nav .navigation-container ul a {
+nav .navigation-container #navigation a {
     text-decoration: none;
     color: white;
+    padding: 10px;
+    font-size: 1rem;
 }
 
-nav .navigation-container ul a:hover {
-    padding: 10px;
-    transform: scale(1.2);
-    transition: 0.5s;
+nav .navigation-container #navigation a:hover {
     background-color: white;
     color: black;
-    border-radius: 10px;
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
-nav .profile-container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    gap: 20px;
-}
-
-nav .profile-container img {
-    width: 50px;
+nav .profile-container #profile {
+    display: block;
+    margin: auto;
+    max-width: 16%;
     border-radius: 50%;
+}
+
+main .content {
+    width: 100vw;
+    height: 100vh;
 }
 
 main #header {
     background: linear-gradient(90deg, #FF004C, #171717, #FF004C, #171717);
-    background-size: 500% 500%;
+    background-size: 400% 400%;
     animation: animate 12s ease-in-out infinite;
-    height: 100vh;
     display: flex;
-    gap: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 main #header h1 {
+    font-size: 5rem;
     color: white;
-    font-size: 5vw;
     animation: drop 1s;
 }
 
 main #header p {
+    font-size: 1.5rem;
     color: white;
+    animation: drop 1s;
 }
 
 main #header a {
-    padding: 15px;
-    background-color: #171717;
+    margin-top: 20px;
     text-decoration: none;
     color: white;
+    padding: 15px;
     border-radius: 10px;
+    background-color: #171717;
+    font-size: 1.2rem;
+    animation: slide 1s;
 }
 
 main #header a:hover {
     color: #FF004C;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
-main .content {
-    height: 100vh;
-}
-
-main #reviews {
-    background-color: #171717;
+main #dormitories {
     display: flex;
+    background: linear-gradient(90deg, #FF004C, #171717, #FF004C, #171717);
+    background-size: 400% 400%;
+    animation: animate 12s ease-in-out infinite;
 }
 
-main #reviews > div {
-    width: 50%;
-}
-
-main #reviews .reviews-container {
+main #dormitories .dorm-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
     align-items: center;
+    gap: 30px;
+    width: 50%;
+    padding: 50px;
 }
 
-main #reviews .reviews-container .review {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; 
-    width: 300px;
-    height: 300px;
-    align-items: center;
-    background-color: blue;
+main #dormitories .dorm-container .dorm {
+    position: relative;
+    width: 100%;
 }
 
-main #reviews .reviews-container .review:hover {
-    transform: translateY(-10px);
+main #dormitories .dorm-container .dorm:hover {
+    transform: translateY(-20px);
     transition: 0.5s;
     cursor: pointer;
 }
 
-main #reviews .reviews-container .review img {
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 15px black;
-    object-fit: cover;
+main #dormitories .dorm-container .dorm .dorm-img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px black;
 }
 
-main #reviews .reviews-container .name {
+main #dormitories .dorm-container .dorm .dorm-title {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    bottom: 3%;
+    left: 5%;
+    padding: 15px;
+    background-color: #171717;
     color: white;
-    text-transform: uppercase;
 }
 
-main #reviews .reviews-container .rating {
+main #dormitories .dorm-container .dorm .dorm-rating {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    bottom: 3%;
+    left: 66%;
+    padding: 15px;
+    color: white;
 }
 
-main #reviews .reviews-heading {
+main #dormitories .dorm-container-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    background-color: red;
+    width: 50%;
 }
 
-main #reviews .reviews-heading h2 {
+main #dormitories .dorm-container-2 h2 {
+    font-size: 4rem;
     color: white;
-    text-transform: uppercase;
 }
 
-main #reviews .reviews-heading .more-reviews {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 200px;
-    height: 60px;
-    box-shadow: 0px 0px 10px black;
-    padding: 5px 4px;
-    border-radius: 50px;
-    position: relative;
-}
-
-main #reviews .reviews-heading .more-reviews img {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 80%;
-}
-
-main #reviews .reviews-heading .more-reviews #img-2 {
-    left: 15px;
-    z-index: 1;
-}
-
-main #reviews .reviews-heading .more-reviews #img-3 {
-    left: 27px;
-    z-index: 2;
-}
-
-main #reviews .reviews-heading .more-reviews #img-4 {
-    left: 37px;
-    z-index: 3;
-}
-
-
-
-
-main #reviews .revo
-
-main #about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+main #dormitories .dorm-container-2 p {
     text-align: center;
+    font-size: 1rem;
+    color: white;
+}
+
+main #dormitories .dorm-container-2 a {
+    margin-top: 20px;
+    width: 20%;
+    padding: 10px;
+    background-color: #171717;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+/* 
+main #why {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #171717;
 }
 
-main #about .about-container h2 {
+main #why h2 {
     color: white;
+    font-size: 3rem;
 }
+
+main #why .why-info {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    width: 100%;
+}
+
+main #why .why-info .card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20em;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 5px black;
+}
+
+main #why .why-info .card img {
+    width: 40%;
+}
+
+main #why .why-info .card p {
+    color: white;
+    text-align: center;
+}
+
+main #why .why-info .card p span {
+    color: green;
+}
+
+main #why #trusted {
+    margin-top: 200px;
+    color: white;
+    font-size: 1rem;
+}
+
+main #why .payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+} */
