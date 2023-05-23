@@ -63,8 +63,14 @@ nav .navigation-container #navigation a:hover {
 nav .profile-container #profile {
     display: block;
     margin: auto;
-    max-width: 16%;
+    max-width: 14%;
     border-radius: 50%;
+}
+
+nav .profile-container #profile:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+    transition: 0.5s;
 }
 
 main .content {
@@ -194,96 +200,13 @@ main #dormitories .dorm-container-2 a {
     color: white;
 }
 
+main #dormitories .dorm-container-2 a:hover {
+    color: #FF004C;
+    transition: 0.5s;
+}
+
 main #reviews .reviews-container {
     display: flex;
-}
-
-
-
-main #contact {
-    background: linear-gradient(90deg, #FF004C, #171717, #FF004C, #171717);
-    background-size: 400% 400%;
-    animation: animate 12s ease-in-out infinite;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main #contact .form-input {
-    width: 60%;
-    height: 80%;
-    box-shadow: 0px 0px 20px 10px black; 
-    padding: 100px;
-    background-color: #171717;
-}
-
-main #contact .form-input .form-input-heading {
-    font-size: 3rem;
-    color: white;
-}
-
-main #contact .form-input .first-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-main #contact .form-input .first-row > div {
-    margin-top: 10px;
-    width: 50%;
-}
-
-main #contact .form-input .first-row div > label, input, select {
-    border: none;
-    background-color: #171717;
-    width: 100%;
-}
-
-main #contact .form-input .first-row div > label {
-    color: white;
-}
-
-main #contact .form-input .first-row div > input, select {
-    border-bottom: 2px solid white;
-    padding: 9px;
-    outline: none;
-    color: white;
-}
-
-main #contact .form-input .first-row .full-name input {
-    text-transform: capitalize;
-}
-
-main #contact .form-input .first-row .province input {
-    margin-top: 1px;
-}
-
-main #contact .form-input .second-row {
-    display: flex;
-    gap: 20px;
-}
-
-main #contact .form-input .second-row > div {
-    margin-top: 20px;
-    width: 20%;
-}
-
-main #contact .form-input .second-row div > label, input {
-    border: none;
-    background-color: #171717;
-    width: 100%;
-}
-
-main #contact .form-input .second-row div > label {
-    color: white;
-}
-
-main #contact .form-input .second-row div > input {
-    border-bottom: 2px solid white;
-    padding: 10px;
-    outline: none;
-    color: white;
 }
 
 main #why {
@@ -333,8 +256,8 @@ main #why .why-info .card p span {
 }
 
 main #why .why-payment-companies p {
-    font-size: 1rem;
-    color: white;
+    font-size: 0.9rem;
+    color: gray;
     text-align: center;
 }
 
@@ -376,11 +299,119 @@ main #about .about-right p {
     text-align: justify;
     font-size: 1.5rem;
     color: white;
-    background-color: #171717;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 5px black;
     overflow: hidden;
+}
+
+main #contact {
+    background-color: #171717;
+    display: flex;
+    justify-content: flex-start;
+}
+
+main #contact > div {
+    height: 100%;
+}
+
+main #contact .contact-left {
+    width: 40%;
+    padding: 50px;
+}
+
+main #contact .contact-left a {
+    text-decoration: none;
+}
+
+main #contact .contact-left .card {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    padding: 20px;
+    border-bottom: 2px solid white;
+}
+
+main #contact .contact-left .card:hover {
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+main #contact .contact-left .card .card-logo {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #contact .contact-left .card .card-info {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    margin-left: 5%;
+    color: white;
+}
+
+main #contact .contact-left .card .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #contact .contact-left .card .socials a {
+    text-decoration: none;
+}
+
+main #contact .contact-left .card .socials ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+main #contact .contact-right {
+    padding: 50px;
+    width: 60%;
+    background-color: #FF004C;
+}
+
+main #contact .contact-right .contact-heading h2 {
+    font-size: 4rem;
+    color: white;
+}
+
+main #contact .contact-right .contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+main #contact .contact-right .contact-form form input, select, textarea {
+    background-color: #171717;
+    color: white;
+    outline: none;
+    padding: 20px;
+    margin-top: 2%;
+    border: none;
+}
+
+main #contact .contact-right .contact-form form label {
+    color: white;
+    font-size: 1.5rem;
+}
+
+main #contact .contact-right .contact-form form .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main #contact .contact-right .contact-form form .buttons > input {
+    width: 40%;
+}
+
+main #contact .contact-right .contact-form form .buttons > input:hover {
+    cursor: pointer;
 }
 
 main #footer {
@@ -427,6 +458,7 @@ main #footer .row-1 .subscribe input, button {
 }
 
 main #footer .row-1 .subscribe input {
+    width: 100%;
     border-bottom: 1px solid white;
 }
 
