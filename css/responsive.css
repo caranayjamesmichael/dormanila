@@ -675,6 +675,31 @@
         text-decoration: none;
     }
     
+    main #footer .row-1 .subscribe form {
+        display: flex;
+    }
+    
+    main #footer .row-1 .subscribe form input, #subscribe-button {
+        padding: 10px;
+    }
+    
+    main #footer .row-1 .subscribe form input {
+        width: 100%;
+        background-color: #171717;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid white;
+        color: white;
+    }
+    
+    main #footer .row-1 .subscribe form #subscribe-button {
+        background-color: #FF004C;
+        width: 40%;
+        border: none;
+        border-radius: 0px 5px 5px 0px;
+        cursor: pointer;
+    }
+    
     main #footer .row-1 .logo-container img {
         max-width: 40%;
     }
