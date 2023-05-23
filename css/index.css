@@ -54,9 +54,10 @@ nav .navigation-container #navigation a {
 
 nav .navigation-container #navigation a:hover {
     background-color: white;
-    color: black;
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.5s;
+    color: black;
+    border-radius: 10px;
 }
 
 nav .profile-container #profile {
@@ -193,6 +194,12 @@ main #dormitories .dorm-container-2 a {
     color: white;
 }
 
+main #reviews .reviews-container {
+    display: flex;
+}
+
+
+
 main #contact {
     background: linear-gradient(90deg, #FF004C, #171717, #FF004C, #171717);
     background-size: 400% 400%;
@@ -239,7 +246,7 @@ main #contact .form-input .first-row div > label {
 
 main #contact .form-input .first-row div > input, select {
     border-bottom: 2px solid white;
-    padding: 10px;
+    padding: 9px;
     outline: none;
     color: white;
 }
@@ -287,54 +294,179 @@ main #why {
     background-color: #171717;
 }
 
-main #why h2 {
-    color: white;
+main #why .why-heading {
     font-size: 3rem;
+    color: white;
+    width: 100%;
+    text-align: center;
 }
 
 main #why .why-info {
-    margin-top: 200px;
+    width: 100%;
+    height: 60%;
     display: flex;
     justify-content: center;
-    gap: 10%;
     align-items: center;
-    width: 100%;
+    gap: 200px;
 }
 
 main #why .why-info .card {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 20px 5px #FF004C;
     width: 20%;
-    height: 20em;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px 5px black;
-}
-
-main #why .why-info .card img {
-    width: 40%;
+    height: 60%;
+    border-radius: 25px;
+    gap: 10%;
 }
 
 main #why .why-info .card p {
     color: white;
     text-align: center;
+    font-size: 1.1rem;
 }
 
 main #why .why-info .card p span {
     color: green;
 }
 
-main #why #trusted {
-    margin-top: 200px;
-    color: white;
+main #why .why-payment-companies p {
     font-size: 1rem;
+    color: white;
+    text-align: center;
 }
 
-main #why .payment {
+main #why .why-payment-companies .payment-companies {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10%;
+}
+
+main #about {
+    display: flex;
+    background: linear-gradient(90deg, #FF004C, #171717, #FF004C, #171717);
+    background-size: 400% 400%;
+    animation: animate 12s ease-in-out infinite;
+}
+
+main #about > div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #about .about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+main #about .about-right h2 {
+    color: white;
+    font-size: 3rem;
+}
+
+main #about .about-right p {
+    width: 50%;
+    height: 50%;
+    text-align: justify;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #171717;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 5px black;
+    overflow: hidden;
+}
+
+main #footer {
+    height: 20vh;
+    background-color: #171717;
+}
+
+main #footer .row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+main #footer .row-1 div:nth-child(odd) {
+    background-color: #171717;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding: 20px;
+}
+
+main #footer .row-1 .navigation-container {
+    width: 60%;
+}
+
+main #footer .row-1 .navigation-container #navigation {
+    display: flex;
+    justify-content: center;
     gap: 50px;
+    list-style: none;
+}
+
+main #footer .row-1 .navigation-container #navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+main #footer .row-1 .subscribe input, button {
+    padding: 10px;
+}
+
+main #footer .row-1 .subscribe input {
+    border-bottom: 1px solid white;
+}
+
+main #footer .row-1 .subscribe button {
+    background-color: #FF004C;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+main #footer .row-1 .logo-container img {
+    max-width: 40%;
+}
+
+main #footer .row-2 {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #footer .row-2 > div {
+    width: 50%;
+}
+
+main #footer .row-2 .credit p {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    margin-right: 61%
+}
+
+main #footer .row-2 .navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    margin-left: 60%;
+}
+
+main #footer .row-2 .navigation ul a {
+    text-decoration: none;
 }
