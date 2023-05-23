@@ -165,8 +165,8 @@
         margin-top: 4%;
     }
 
-    main #footer .row-1 .subscribe input {
-        width: 400px;
+    main #footer .row-1 .subscribe form input {
+        width: 250px;
     }
     
 
@@ -673,21 +673,6 @@
     main #footer .row-1 .navigation-container #navigation a {
         color: white;
         text-decoration: none;
-    }
-    
-    main #footer .row-1 .subscribe input, button {
-        padding: 10px;
-    }
-    
-    main #footer .row-1 .subscribe input {
-        width: 100%;
-        border-bottom: 1px solid white;
-    }
-    
-    main #footer .row-1 .subscribe button {
-        background-color: #FF004C;
-        border: none;
-        border-radius: 0px 5px 5px 0px;
     }
     
     main #footer .row-1 .logo-container img {
