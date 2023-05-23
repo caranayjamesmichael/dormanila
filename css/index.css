@@ -137,28 +137,30 @@ main #dormitories .dorm-container .dorm:hover {
     cursor: pointer;
 }
 
-main #dormitories .dorm-container .dorm .dorm-img {
+main #dormitories .dorm-container .dorm .dorm-image {
     display: block;
     width: 100%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 2px black;
 }
 
-main #dormitories .dorm-container .dorm .dorm-title {
+main #dormitories .dorm-container .dorm-info {
     position: absolute;
-    bottom: 3%;
     left: 5%;
-    padding: 15px;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #dormitories .dorm-container .dorm-info .dorm-title {
+    padding: 10px;
     background-color: #171717;
     color: white;
 }
 
-main #dormitories .dorm-container .dorm .dorm-rating {
-    position: absolute;
-    bottom: 3%;
-    left: 66%;
-    padding: 15px;
-    color: white;
+main #dormitories .dorm-container .dorm-info .dorm-title {
+
 }
 
 main #dormitories .dorm-container-2 {
@@ -191,7 +193,92 @@ main #dormitories .dorm-container-2 a {
     color: white;
 }
 
-/* 
+main #contact {
+    background: linear-gradient(90deg, #FF004C, #171717, #FF004C, #171717);
+    background-size: 400% 400%;
+    animation: animate 12s ease-in-out infinite;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #contact .form-input {
+    width: 60%;
+    height: 80%;
+    box-shadow: 0px 0px 20px 10px black; 
+    padding: 100px;
+    background-color: #171717;
+}
+
+main #contact .form-input .form-input-heading {
+    font-size: 3rem;
+    color: white;
+}
+
+main #contact .form-input .first-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+main #contact .form-input .first-row > div {
+    margin-top: 10px;
+    width: 50%;
+}
+
+main #contact .form-input .first-row div > label, input, select {
+    border: none;
+    background-color: #171717;
+    width: 100%;
+}
+
+main #contact .form-input .first-row div > label {
+    color: white;
+}
+
+main #contact .form-input .first-row div > input, select {
+    border-bottom: 2px solid white;
+    padding: 10px;
+    outline: none;
+    color: white;
+}
+
+main #contact .form-input .first-row .full-name input {
+    text-transform: capitalize;
+}
+
+main #contact .form-input .first-row .province input {
+    margin-top: 1px;
+}
+
+main #contact .form-input .second-row {
+    display: flex;
+    gap: 20px;
+}
+
+main #contact .form-input .second-row > div {
+    margin-top: 20px;
+    width: 20%;
+}
+
+main #contact .form-input .second-row div > label, input {
+    border: none;
+    background-color: #171717;
+    width: 100%;
+}
+
+main #contact .form-input .second-row div > label {
+    color: white;
+}
+
+main #contact .form-input .second-row div > input {
+    border-bottom: 2px solid white;
+    padding: 10px;
+    outline: none;
+    color: white;
+}
+
 main #why {
     display: flex;
     flex-direction: column;
@@ -250,4 +337,4 @@ main #why .payment {
     justify-content: center;
     align-items: center;
     gap: 50px;
-} */
+}
